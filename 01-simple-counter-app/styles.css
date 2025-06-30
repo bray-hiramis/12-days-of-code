@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 10px;
+}
+
+body {
+   background-color: #333;
+   color: #f2f2f2;
+   font-family: "Open Sans", sans-serif;
+   font-size: 2rem;
+   line-height: 1.8;
+   display: flex;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+}
+
+.container {
+   height: 400px;
+   min-width: 500px;
+   background-color: #065535;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+}
+
+#counter-display {
+   font-size: 10rem;
+   text-align: center;
+}
+
+.btn {
+   font-size: 4rem;
+   padding: .5em 1em;
+   margin: 0.1em;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   box-shadow: 0 0 10px 2px #222;
+}
+
+#increment-btn {
+   background-color: green;
+   color: #f2f2f2;
+   transition: .2s;
+}
+#increment-btn:hover {
+   background-color: darkgreen;
+}
+
+#decrement-btn {
+   background-color: red;
+   color: #f2f2f2;
+   transition: .2s;
+}
+#decrement-btn:hover {
+   background-color: maroon;
+}
+
+#reset:hover {
+   background-color: gainsboro;
+}
+
+.negative {
+   color: red;
+}
