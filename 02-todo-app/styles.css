@@ -1,0 +1,111 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --bg-color: #f9f9f9;
+   --txt-color: #555;
+   --primary-color: #1e90ff;
+   --add-color: #35c411;
+   --delete-color: #ff6b6b;
+}
+
+body {
+   line-height: 1.8;
+   font-family: "Open Sans", sans-serif;
+   text-align: center;
+   background-color: var(--bg-color);
+   color: var(--txt-color);
+}
+
+.container {
+   max-width: 680px;
+   margin: 0 auto;
+   padding: 0.7em;
+}
+
+h1 {
+   margin: 0.5em 0;
+}
+
+#task-input,
+#add-task-btn {
+   padding: 0.8em 0.5em;
+   font-size: 1.1rem;
+   border-radius: 5px;
+}
+
+#task-input {
+   width: 68%;
+}
+
+#add-task-btn {
+   cursor: pointer;
+   width: 30%;
+   background-color: var(--add-color);
+   transition: .3s;
+}
+
+#add-task-btn:hover{
+   background-color: #249a07;
+}
+
+#task-list {
+   display: flex;
+   flex-direction: column;
+   list-style: none;
+   padding: 0;
+   margin-top: 20px;
+   transition: .3s;
+}
+#task-list li {
+   position: relative;
+   top: 0;
+   text-align: left;
+   background-color: var(--primary-color);
+   color: var(--bg-color);
+   font-size: 1.5rem;
+   padding: 10px;
+   margin-bottom: 5px;
+   border-radius: 5px;
+   flex: 1;
+}
+
+.delete-btn {
+   position: absolute;
+   left: 500px;
+   top: 15px;
+   cursor: pointer;
+   padding: 0.3em 1.2em;
+   font-size: 1.2rem;
+   background-color: var(--delete-color);
+   border: none;
+   border-radius: 5px;
+}
+
+.complete-btn {
+   position: absolute;
+   left: 570px;
+   top: 15px;
+   cursor: pointer;
+   padding: 0.3em 1.2em;
+   font-size: 1.2rem;
+   background-color: var(--add-color);
+   border: none;
+   border-radius: 5px;
+}
+
+.delete-btn,
+.complete-btn {
+   transition: .3s;
+}
+
+.delete-btn:hover {
+   background-color: #d53737;
+}
+
+.complete-btn:hover {
+   background-color: #249a07;
+}
