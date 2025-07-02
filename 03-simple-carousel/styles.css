@@ -1,0 +1,56 @@
+body {
+   font-family: "Open Sans", sans-serif;
+   background-color: #222;
+}
+
+h1 {
+   color: #f2f2f2;
+   text-align: center;
+}
+
+.container {
+   max-width: 900px;
+   margin: 0 auto;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   aspect-ratio: 9/10;
+   object-fit: cover;
+}
+
+.gallery-container {
+   max-width: 350px;
+   margin: 0 auto;
+   padding: 1em;
+}
+
+button {
+   cursor: pointer;
+   padding: 0.3em 1em;
+   font-size: 1.2rem;
+   width: 49%;
+   border: 2px solid tomato;
+   border-radius: 10px;
+}
+
+.btn-container {
+   margin: 1em auto;
+}
+
+#prev-btn,
+#next-btn {
+   transition: .1s;
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+   background-color: #333;
+   color: #f2f2f2;
+}
+
+#prev-btn:active,
+#next-btn:active {
+   background-color: tomato;
+}
