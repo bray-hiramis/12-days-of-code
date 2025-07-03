@@ -1,0 +1,39 @@
+button {
+   cursor: pointer;
+   display: block;
+   width: 100%;
+   margin: .8em 0;
+   padding: 1em 0;
+   font-size: 1.2rem;
+   border-radius: 10px;
+   border: none;
+   transition: all .2s ease;
+}
+
+button:hover {
+   background-color: #898;
+}
+
+button[data-color="red"]:active {
+   background-color: red;
+}
+
+button[data-color="blue"]:active {
+   background-color: blue;
+}
+
+button[data-color="green"]:active {
+   background-color: green;
+}
+
+button[data-color="yellow"]:active {
+   background-color: yellow;
+}
+
+button[data-color="random-btn"]:active {
+   background-color: #555;
+}
+
+button[data-color="reset-btn"]:active {
+   background-color: tomato;
+}
