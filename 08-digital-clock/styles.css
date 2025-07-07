@@ -1,0 +1,55 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Bitcount Grid Double", system-ui;
+   line-height: 1.8;
+   background-color: #222;
+   color: #f2f2f2;
+   height: 100vh;
+   position: relative;
+   top: 0;
+}
+
+.container {
+   max-width: 900px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100%;
+   font-size: 3.5rem;
+}
+
+.clock-container {
+   width: 500px;
+   margin: 0 auto;
+   text-align: center;
+   padding: .5em;
+}
+
+.sub-clock {
+   display: flex;
+   flex-direction: column;
+}
+
+sup {
+   font-size: 1.2rem;
+}
+
+#daytime {
+   cursor: pointer;
+   background-color: transparent;
+   border: dotted 1px #f2f2f2;
+   color: #f2f2f2;
+   padding: 0.5em;
+   font-size: 1.6rem;
+   transition: .3s;
+}
+
+#daytime:active {
+   color: tomato;
+}
