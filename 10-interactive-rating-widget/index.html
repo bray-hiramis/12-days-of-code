@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="styles.css">
+   <title>Interactive Rating Widget</title>
+</head>
+<body>
+
+   <div class="container">
+
+      <div class="movie">
+         <h1 id="title">Spider-Man: No Way Home</h1>
+         <img src="https://upload.wikimedia.org/wikipedia/en/0/00/Spider-Man_No_Way_Home_poster.jpg" alt="Spider-Man: No Way Home poster.">
+      </div>
+
+      <div class="rating-container">
+         <div id="rating-widget">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+         </div>
+         <p>Rate this film: <span id="selected-rating">None</span></p>
+      </div>
+
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
