@@ -1,0 +1,57 @@
+:root {
+   --light-bg: #f0f0f0;
+   --dark-bg: #333;
+   --content-bg: #555;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   background-color: var(--light-bg); /* Light mode background */
+   color: var(--dark-bg); /* Light mode text */
+   transition: background-color 0.5s, color 0.5s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   min-height: 100vh;
+}
+body.dark-mode {
+   background-color: var(--dark-bg); /* Dark mode background */
+   color: var(--light-bg); /* Dark mode text */
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.theme-text {
+   color: tomato;
+   font-weight: 900;
+}
+
+button {
+   padding: 10px 20px;
+   font-size: 1em;
+   margin-bottom: 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   width: 100%;
+}
+.content {
+   background-color: #ffffff; /* Light mode card background */
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+   width: 100%;
+   text-align: center;
+}
+body.dark-mode .content {
+   background-color: var(--content-bg); /* Dark mode card background */
+   color: var(--light-bg);
+}

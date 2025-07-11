@@ -1,97 +1,21 @@
+// Dynamic Filter List
+
 const filterInput = document.getElementById('filter-input');
 const li = document.querySelectorAll('li');
 
-filterInput.addEventListener('input', function() {
-   const searchItem = filterInput.value.toLowerCase().trim();
+function filterText(input) {
+   const searchItem = input.toLowerCase().trim(); // making the text-input case insensitive
    for (let item of li) {
       let itemText = item.textContent.toLowerCase();
-      
-      if (itemText.includes(searchItem)) {
+
+      if (itemText.includes(searchItem)) { // if list-item includes/contains the text-input(input parameter)
          item.style.display = 'block';
       } else {
          item.style.display = 'none';
       };
    };
+};
+
+filterInput.addEventListener('input', function() {
+   filterText(filterInput.value);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* `document.getElementById()`
-
-- `element.addEventListener('input', function)`
-
-- `inputElement.value`
-
-- `document.querySelectorAll()` (to get all `<li>` elements)
-
-- `element.textContent` (to get the text of an `<li>`)
-
-- `string.includes()` or `string.indexOf()` (for checking if text contains substring)
-
-- `element.style.display = 'none'` / `element.style.display = 'block'` */
-
-// OLD CODE
-
-// filterInput.value = '';
-
-/* for (let list of li) {
-   let contain = list.textContent.toUpperCase();
-   console.log(contain);
-   let result = contain.includes("apple".toUpperCase());
-   console.log(result);
-}; */
-
-/* function filter(input) {
-   for (let item of li) {
-      let contain = item.textContent;
-      let result = contain.includes(input.value);
-      console.log(result);
-   };
-}; */
